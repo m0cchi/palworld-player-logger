@@ -30,7 +30,7 @@ def fetch_login_players(mcr):
         except:
             mcr.connect()
     # filter loading players
-    return [p for p in players if p['playeruid'] != '00000000']
+    return [p for p in players if p["playeruid"] != "00000000"]
 
 
 def diff_players(new_players, old_payers):
