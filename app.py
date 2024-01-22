@@ -29,8 +29,8 @@ def fetch_login_players(mcr):
             break
         except:
             mcr.connect()
-
-    return players
+    # filter loading players
+    return [p for p in players if p['playeruid'] != '00000000']
 
 
 def diff_players(new_players, old_payers):
@@ -68,8 +68,8 @@ if __name__ == "__main__":
                     json.dumps(
                         {
                             "message": "diff",
-                            "login_user": login_players,
-                            "logout_user": logout_players,
+                            "login_players": login_players,
+                            "logout_players": logout_players,
                         }
                     )
                 )

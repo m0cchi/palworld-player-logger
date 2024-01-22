@@ -1,6 +1,6 @@
 # What?
 
-Logging login players and logout players
+Logging login players and logout players.
 
 # Spec
 
