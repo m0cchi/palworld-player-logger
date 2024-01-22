@@ -68,8 +68,8 @@ if __name__ == "__main__":
                     json.dumps(
                         {
                             "message": "diff",
-                            "login_user": login_players,
-                            "logout_user": logout_players,
+                            "login_players": login_players,
+                            "logout_players": logout_players,
                         }
                     )
                 )
